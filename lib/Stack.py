@@ -30,7 +30,7 @@ class Stack:
     # must reverse the stack to count from top down
     def search(self, target):
         reversed_list = list(reversed(self.items))
-        for index in range(len(self.items)- 1, -1, -1):
+        for index in range(len(self.items)):
             if reversed_list[index] == target:
                 return index
         return -1
